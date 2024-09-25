@@ -658,7 +658,7 @@ body {
   left: 50%;
 
   width: 408px;
-  min-height: 584px;
+  height: 584px;
   border-radius: 4px;
 
   transform: translate(-50%, -50%);
@@ -689,10 +689,10 @@ body {
 
   padding: 0;
   color: #404bbf;
-  background-color: transparent;
+  background-color: #e7e9fc;
   border: 1px solid #2e2f4266;
 
-  transition: color var(--transition-duration-and-func);
+  transition: 300ms ease-in;
   transition-property: color;
 }
 
