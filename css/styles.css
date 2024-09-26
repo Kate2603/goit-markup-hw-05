@@ -807,19 +807,20 @@ body {
 .modal-form-comment::placeholder {
   font-weight: 400;
   font-size: 12px;
-  line-height: 1.16;
+  line-height: 1.17;
   letter-spacing: 0.01em;
   color: var(--seventh-text-color);
 }
 
-.user-agrimment {
+.form-agreement {
   padding: 0;
   display: block;
   margin-top: 16px;
   margin-bottom: 24px;
+  margin-right: 8px;
 }
 
-.user-agrimment-checkbox {
+.checkbox {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -833,30 +834,28 @@ body {
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-input[type='checkbox']:checked + .user-agrimment-checkbox {
+input[type='checkbox']:checked + .checkbox {
   background-color: #404bbf;
   fill: #ffffff;
   border-color: transparent;
 }
 
-input[type='checkbox']:focus-visible + .user-agrimment-checkbox {
+input[type='checkbox']:focus-visible + .checkbox {
   outline: 2px solid #404bbf;
   fill: #ffffff;
   outline-offset: 2px;
 }
 
-.user-agrimment-checkbox-icon {
+.checkbox-icon {
   opacity: 0;
   transition: var(--transition-duration-and-func);
 }
 
-input[type='checkbox']:checked
-  + .user-agrimment-checkbox
-  > .user-agrimment-checkbox-icon {
+input[type='checkbox']:checked + .checkbox > .checkbox-icon {
   opacity: 1;
 }
 
-.user-agrimment-text {
+.user-agreement-text {
   font-weight: 400;
   font-size: 12px;
   line-height: 1.17;
@@ -864,7 +863,7 @@ input[type='checkbox']:checked
   color: var(--seventh-text-color);
 }
 
-.user-agrimment-link {
+.user-agreement-link {
   font-weight: 400;
   font-size: 12px;
   line-height: 1.33;
@@ -889,7 +888,7 @@ input[type='checkbox']:checked
   border-radius: 4px;
   border: none;
   transition: background-color var(--transition-duration-and-func);
-  margin: 24px auto;
+  margin: auto;
 }
 
 .modal-form-submit:hover,
