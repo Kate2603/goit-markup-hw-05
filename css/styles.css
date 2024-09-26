@@ -564,8 +564,10 @@ body {
   margin-bottom: 16px;
 }
 
-.footer-newsletter-form {
+.newsletter-form {
   display: flex;
+  justify-content: baseline;
+  gap: 24px;
 }
 
 .newsletter-form-item {
@@ -597,7 +599,7 @@ body {
   background-color: var(--secondth-background);
 }
 
-.newsletter-btn {
+.newsletter-form-btn {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -618,7 +620,7 @@ body {
   border: none;
 }
 
-.newsletter-btn-icon {
+.newsletter-form-btn-icon {
   margin-left: 16px;
   width: 24px;
   height: 24px;
