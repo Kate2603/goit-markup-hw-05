@@ -690,23 +690,21 @@ body {
   height: 24px;
 
   padding: 0;
-  fill: none;
-  color: #404bbf;
+  fill: #404bbf;
   background-color: #e7e9fc;
   border: 1px solid rgba(0, 0, 0, 0.1);
 
-  transition: var(--transition-duration-and-func);
-  transition-property: color;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-close-btn-icon {
-  stroke: currentColor;
-  color: #404bbf;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-close-btn:hover,
 .modal-close-btn:focus {
-  color: #ffffff;
+  fill: #ffffff;
   background-color: var(--fourth-background);
   border: none;
 }
@@ -783,6 +781,10 @@ body {
   fill: #4d5ae5;
 }
 
+.modal-comment {
+  margin-bottom: 8px;
+}
+
 .modal-form-comment {
   width: 100%;
   min-height: 120px;
@@ -838,14 +840,14 @@ body {
 
 input[type='checkbox']:checked + .checkbox {
   background-color: #404bbf;
-  fill: #ffffff;
-  border-color: transparent;
+  fill: #f4f4fd;
+  border: none;
 }
 
 input[type='checkbox']:focus-visible + .checkbox {
-  outline: 2px solid #404bbf;
-  fill: #ffffff;
-  outline-offset: 2px;
+  background-color: #404bbf;
+  fill: #f4f4fd;
+  border: none;
 }
 
 .checkbox-icon {
@@ -871,7 +873,7 @@ input[type='checkbox']:checked + .checkbox > .checkbox-icon {
   line-height: 1.33;
   letter-spacing: 0.04em;
   text-decoration-line: underline;
-  color: var(--sixth-text-color);
+  color: #4d5ae5;
 }
 
 .modal-form-submit {
