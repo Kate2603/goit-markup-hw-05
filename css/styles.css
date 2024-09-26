@@ -813,6 +813,10 @@ body {
   color: rgba(46, 47, 66, 0.4);
 }
 
+.form-agreement {
+  margin-bottom: 24px;
+}
+
 .checkbox {
   display: inline-flex;
   align-items: center;
@@ -828,7 +832,7 @@ body {
   margin-right: 8px;
 }
 
-input[type='checkbox']:checked + .checkbox {
+input[type='checkbox']:checked + label .checkbox {
   background-color: #404bbf;
   fill: #f4f4fd;
   border: none;
@@ -836,10 +840,10 @@ input[type='checkbox']:checked + .checkbox {
 
 .checkbox-icon {
   opacity: 0;
-  transition: var(--transition-duration-and-func);
+  transition: opacity var(--transition-duration-and-func, 250ms);
 }
 
-input[type='checkbox']:checked + .checkbox > .checkbox-icon {
+input[type='checkbox']:checked + label .checkbox-icon {
   opacity: 1;
 }
 
